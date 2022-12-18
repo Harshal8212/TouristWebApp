@@ -1,0 +1,43 @@
+
+hr{
+    border-top: 8px double white;
+
+}
+
+.title{
+    text-align: center;
+}
+
+.hr1{
+    border-top: 5px dotted black;
+}
+.hr3{
+    border-top: 5px double white;
+   
+}
+
+.logo{
+    border-radius: 100%
+    ;
+}
+.heading{
+    
+    display: flex;
+   
+    
+}
+.heading{
+  
+    height: 150px;
+    margin: 10px;
+    line-height: 1.4em;
+    border: 5px solid white;
+    font-size: 14px;
+    border-radius: 30px;
+    
+  }
+  .card1{
+    margin-bottom: 3%;
+  }
+
+  
