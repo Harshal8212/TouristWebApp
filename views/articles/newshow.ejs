@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>historical guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel=" icon" href="img/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    
+    <div class="container p-5 my-5 bg-dark ">
+        <div class="d-flex justify-content-center text-white">
+            <h1><u>HISTORICAL GUIDE</u></h1>
+        </div>
+    <br>    
+    
+    <hr class="text-white border-3 hr3">
+
+    <div class="container-fluid style2">
+        
+        <div class="row">
+    <% articles.forEach(function(articles){ %>
+        
+<div class="card m-2" style="width: 20rem;">
+  
+  <div class="card-body text-black">
+    <h4 class="card-title "><%= articles.title %></h4>
+    <p class="card-text"><%= articles.description %></p>
+    <a href="/articles/<%= articles.id%>" class="btn btn-primary mb-3">Read More</a>
+    <a href="/articles/map/<%= articles.id%>" class="btn btn-primary mb-3">GO TO MAPS</a>
+
+  </div>
+</div>
+
+<% }) %>
+<a href="/articles/new" class="btn btn-success m-3">New Article</a>
+</div>
+</div>
+</div>
+
+</body>
+</html>

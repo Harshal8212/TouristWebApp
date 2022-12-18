@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>historical guide</title>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel=" icon" href="img/favicon-32x32.png" type="image/x-icon">
+    </head>
+    <body>
+        
+        <div class="container p-5 my-5 bg-dark fullb">
+            <div>
+              
+            </div>
+
+            <div class="d-flex justify-content-center text-white">
+              <div class="heading">
+              <div class="m-4 d1">
+                <img src="img/fortlog.jpg" alt="logo" width="100px" height="100px" class="logo">
+              </div>  
+              <div class="m-5 d2">
+                <h1><u>HISTORICAL GUIDE</u></h1>
+              </div>
+            </div>
+            </div>
+            <div class="d-flex justify-content-end text-white m-3">
+              <h6><i>- Let's stay connected to our <strong>roots</strong></i></h6>
+            </div>
+        <br>
+        <hr class="text-white border-3">
+        <div class="d-grid">
+          <a href="/all" class="btn btn-success m-4 btn-block">All Places</a >
+        </div>
+        
+        
+        <div class="container">
+        
+     
+      <% articles.forEach(function(articles){ %>
+        
+        <div class="card bg-light card1" style="width: 100%;">
+          <div class="card-body text-black">
+            <% var str = articles.title %>
+            <% var replaced = str.split(' ').join('+') %>
+            
+            <h3 class="card-title title"><%= articles.title %></h3>
+            <hr class="hr1">
+            <h6 class="card-text"><%= articles.description %></h6>
+            <p class="card-text"><%= articles.markdown %></p>
+            <h4>😎Let's GO😎</h4>
+            <iframe
+              width="100%"
+              height="350"
+              frameborder="0" style="border:0"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC3vioHoAYW74flNU4Hic_tG5jU8wAEHmc&q=<%= replaced %>"
+              allowfullscreen>
+            </iframe>
+            
+          
+          </div>
+        </div>
+        <% }) %>
+   
+    </div>
+      </div>
+    
+      
+    </body>
+    </html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
